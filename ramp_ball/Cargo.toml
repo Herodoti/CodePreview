@@ -1,0 +1,10 @@
+[package]
+name = "ramp_ball"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+avian2d = "0.1.1"
+bevy = "0.14.0"
+bevy_bsml = { git="https://github.com/davi4046/bevy_bsml" }
+lyon = "1.0.1"
