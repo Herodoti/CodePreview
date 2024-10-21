@@ -1,0 +1,41 @@
+{
+    "name": "ts-hsm",
+    "version": "1.0.0",
+    "description": "A tiny zero-dependency implementation of the Hierarchical State Machine pattern in TypeScript.",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/index.js",
+            "import": "./dist/index.mjs",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "scripts": {
+        "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+        "watch": "npm run build -- --watch src",
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/davi4046/ts-hsm.git"
+    },
+    "keywords": [
+        "Hierarchical",
+        "Nested",
+        "Finite",
+        "State",
+        "Machine"
+    ],
+    "author": "David Rud Pedersen",
+    "license": "ISC",
+    "devDependencies": {
+        "@swc/core": "^1.6.13",
+        "@types/jest": "^29.5.12",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.2.2",
+        "tsup": "^8.1.0",
+        "typescript": "^5.5.3"
+    }
+}

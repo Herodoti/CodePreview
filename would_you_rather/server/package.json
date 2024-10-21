@@ -1,0 +1,17 @@
+{
+    "scripts": {
+        "start": "ts-node src/main.ts"
+    },
+    "dependencies": {
+        "protocol": "file:../protocol",
+        "socket.io": "^4.7.5",
+        "ts-hsm": "github:davi4046/ts-hsm",
+        "zod": "^3.23.8",
+        "zod-validation-error": "^3.3.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.14.9",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.5.3"
+    }
+}
